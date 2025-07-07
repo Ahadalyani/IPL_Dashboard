@@ -112,9 +112,8 @@ DELIMITER ',' CSV HEADER;
 
 
 ### 2. Ball-by-Ball Table Creation
-sql
-Copy
-Edit
+
+```sql
 CREATE TABLE ipl_ball_by_ball_2008_2022 (
     id int8 NOT NULL,
     innings int8,
@@ -138,38 +137,68 @@ CREATE TABLE ipl_ball_by_ball_2008_2022 (
 COPY ipl_ball_by_ball_2008_2022 
 FROM 'D:/ipl_ball_by_ball_2008_2022.csv' 
 DELIMITER ',' CSV HEADER;
-🚀 How to Use
-Clone this repository.
 
-Create the tables in PostgreSQL using the provided SQL queries.
+### 2. Ball-by-Ball Table Creation
 
-Import the CSV files into the corresponding tables.
+```sql
+CREATE TABLE ipl_ball_by_ball_2008_2022 (
+    id int8 NOT NULL,
+    innings int8,
+    overs int8,
+    ball_number int8,
+    batter varchar(50),
+    bowler varchar(50),
+    non_striker varchar(50),
+    extra_type varchar(50),
+    batsman_run int8,
+    extras_run int8,
+    total_run int8,
+    non_boundry int8,
+    iswicket_delivery int8,
+    player_out varchar(50),
+    dismisal_kind varchar(50),
+    fielders_involved varchar(50),
+    batting_team varchar(50)
+);
 
-Connect Power BI to your PostgreSQL database.
+COPY ipl_ball_by_ball_2008_2022 
+FROM 'D:/ipl_ball_by_ball_2008_2022.csv' 
+DELIMITER ',' CSV HEADER;
+```
 
-Build the visuals as shown in the provided dashboard screenshot.
+---
 
-Add slicers and interactivity for Season, Player, and Team selection.
+## 🚀 How to Use
 
-📌 Insights You Can Discover
-Player of the season (runs/wickets)
+1. Clone this repository.
+2. Create the tables in PostgreSQL using the provided SQL queries.
+3. Import the CSV files into the corresponding tables.
+4. Connect Power BI to your PostgreSQL database.
+5. Build the visuals as shown in the provided dashboard screenshot.
+6. Add slicers and interactivity for Season, Player, and Team selection.
 
-Winning patterns by toss decision
+---
 
-Most successful venues and teams
+## 📌 Insights You Can Discover
 
-How matches are won (by runs, wickets, or super overs)
+- Player of the season (runs/wickets)
+- Winning patterns by toss decision
+- Most successful venues and teams
+- How matches are won (by runs, wickets, or super overs)
+- Trends in batting and bowling performances
 
-Trends in batting and bowling performances
+---
 
 ## 🙌 Credits
-IPL data sourced from public cricket datasets.
 
-SQL design and transformations by [Your Name].
+- IPL data sourced from public cricket datasets.
+- SQL design and transformations by [Your Name].
+- Dashboard designed and developed using Power BI.
 
-Dashboard designed and developed using Power BI.
+---
 
-📬 Contact
-Ahad Alyani
-📧 Email: [your-email@example.com]
-🔗 LinkedIn: [linkedin.com/in/your-profile]
+## 📬 Contact
+
+**Ahad Alyani**  
+📧 Email: [your-email@example.com]  
+🔗 LinkedIn: [linkedin.com/in/ahad-alyani09]

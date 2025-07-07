@@ -111,7 +111,7 @@ FROM 'D:/ipl_matches_2008_2022.csv'
 DELIMITER ',' CSV HEADER;
 
 
-2. Ball-by-Ball Table Creation
+### 2. Ball-by-Ball Table Creation
 sql
 Copy
 Edit
@@ -162,7 +162,7 @@ How matches are won (by runs, wickets, or super overs)
 
 Trends in batting and bowling performances
 
-🙌 Credits
+## 🙌 Credits
 IPL data sourced from public cricket datasets.
 
 SQL design and transformations by [Your Name].

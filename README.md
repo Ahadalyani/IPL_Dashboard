@@ -200,5 +200,5 @@ DELIMITER ',' CSV HEADER;
 ## 📬 Contact
 
 **Ahad Alyani**  
-📧 Email: [your-email@example.com]  
+📧 Email: [ahadalyani09@example.com]  
 🔗 LinkedIn: [linkedin.com/in/ahad-alyani09]
